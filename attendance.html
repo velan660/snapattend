@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>attendance page</title>
+    </head>
+    <body>
+        <h1>DEPARTMENT OF COMPUTER SCIENCE</h1>
+        <form action="/attendance" method="post">
+            <div id="select">
+            <label for="register_number">REGISTER NUMBER</label>
+            <select id="register_number" name="register_number" >
+                <option value="2021128001">2021128001</option>
+                <option value="2021128002">2021128002</option>
+                <option value="2021128003">2021128003</option>
+                <option value="2021128004">2021128004</option>
+                <option value="2021128005">2021128005</option>
+                <option value="2021128006">2021128006</option>
+                <option value="2021128007">2021128007</option>
+                <option value="2021128008">2021128008</option>
+                <option value="2021128009">2021128009</option>
+                <option value="2021128010">2021128010</option>
+                <option value="2021128011">2021128011</option>
+                <option value="2021128012">2021128012</option>
+                <option value="2021128013">2021128013</option>
+                <option value="2021128014">2021128014</option>
+                <option value="2021128015">2021128015</option>
+                <option value="2021128016">2021128016</option>
+                <option value="2021128017">2021128017</option>
+                <option value="2021128018">2021128018</option>
+                <option value="2021128019">2021128019</option>
+                <option value="2021128020">2021128020</option>
+                <option value="2021128021">2021128021</option>
+                <option value="2021128022">2021128022</option>
+                <option value="2021128023">2021128023</option>
+                <option value="2021128024">2021128024</option>
+                <option value="2021128025">2021128025</option>
+                <option value="2021128026">2021128026</option>
+                <option value="2021128027">2021128027</option>
+                <option value="2021128028">2021128028</option>
+                <option value="2021128029">2021128029</option>
+                <option value="2021128030">2021128030</option>
+                <option value="2021128031">2021128031</option>
+                <option value="2021128032">2021128032</option>
+                <option value="2021128033">2021128033</option>
+                <option value="2021128034">2021128034</option>
+                <option value="2021128035">2021128035</option>
+                <option value="2021128036">2021128036</option>
+                <option value="2021128037">2021128037</option>
+                <option value="2021128038">2021128038</option>
+                <option value="2021128039">2021128039</option>
+                <option value="2021128040">2021128040</option>
+                <option value="2021128041">2021128041</option></select></div><br>
+            <div id="result">
+            <label for="result1">PRESENT </label>
+            <input type="radio" id="result1" name="result" value="present"><br>
+            <label for="result2">ABSENT </label>
+            <input type="radio" id="result2" name="result" value="absent">
+            </div>
+            <button type="submit" id="submit">VERIFY</button>
+            <div id="resultcontainer">
+            <div>{{ success }}</div>
+            <div>{{ reg_no }}</div>
+            <div>{{ result }}</div>
+            </div>
+        </form>
+        <style>
+             :root{
+            --blue:#25274D;
+            --white:#AAABBB;
+            --aqua:#2E9CCA;
+             }
+             .result{
+               height:150px;
+             }.result1{
+               margin-bottom:20px;
+             }
+             .resultcontainer div{
+               color:var(--aqua);
+               font-weight: bold;
+             }
+             .resultcontainer{
+               margin-top:20px;
+             }
+             body{
+                background-color:var(--blue);
+             }
+             h1{
+                color:var(--white);
+                text-align: center;
+             }
+             label{
+                color:var(--aqua);
+                font-weight:bold;
+             }
+             #submit{
+                font-weight:bold;
+             }
+             #submit:hover{background-color:var(--aqua);
+             }
+             form{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                height:100vh;
+             }
+             #select{
+                margin-top:40px;
+                margin-bottom:40px;
+             }
+             #result{
+                margin-bottom:40px;
+             }
+
+
+        </style>
+    </body>
+</html>

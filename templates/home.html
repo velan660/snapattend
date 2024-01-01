@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home page of snapattend</title>
+    </head>
+    <body>
+        <div id="menubar"><a href="/loginhome" id="login">LogIn</a><a href="/register" id="register">Staff Registration</a><a href="about.html" id="about">About this site</a><div id="hb"><div></div><div></div><div></div></div></div>
+        <div id="title"><h1><span>S</span>nap<span>A</span>ttend</h1>
+        <h2>Empowering Your Academic Journey with Precision Attendance</h2></div>
+    </body>
+    <style>
+        
+        :root{
+            --blue:#25274D;
+            --white:#AAABBB;
+            --aqua:#2E9CCA;
+        }
+        *{
+            text-decoration:none;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color:var(--blue);
+        }
+        #hb div{
+            width:20px;
+            height:2px;
+            background-color:var(--white);
+            margin-top:4px;
+
+        }
+        #menubar a{
+            color:var(--aqua);
+            padding:4px;
+            border-radius:10px;
+            text-align: center;
+        }
+        #login{
+        margin-right:40px;
+        }
+        #register{
+            margin-right:40px;
+        }
+        #menubar{
+            height:20%;
+            padding:30px;
+            display:flex;
+            justify-content:space-between;
+            
+        }
+        #hb{
+            margin-left:auto;
+            cursor:pointer;
+    
+        }
+        
+        #title h1{
+             color:var(--white);
+             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #title h1 span{
+            font-size:60px;
+            color:var(--aqua);
+        }
+        #title h2{
+            text-align: center;
+            color:var(--white);
+        }
+        
+        #menubar a:hover{
+            background-color:black;
+
+        }
+    </style>
+</html>

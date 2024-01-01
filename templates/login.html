@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Staff's login page
+        </title>
+    </head>
+    <body>
+        <div id="container">
+        <form action="/login" method="post">
+            <label for="usename">Username</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password</label><br>
+             <input type="text" id="password" name="password"><br>
+             <button type="submit">LogIn</button>
+        </form></div>
+        <style>
+            :root{
+            --blue:#25274D;
+            --white:#AAABBB;
+            --aqua:#2E9CCA;
+        }
+        body{
+            background-color:var(--blue);
+        }
+        #container{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+        }
+        form label{
+            color:var(--aqua);
+            margin-top:10px;
+        }
+        #username,#password{
+            margin-bottom:20px;
+        }
+        button{
+            color:var(--aqua);
+            cursor:pointer;
+        }
+        button:hover{
+            background-color:black;
+        }
+
+        </style>
+    </body>
+</html>
